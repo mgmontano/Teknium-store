@@ -1,0 +1,39 @@
+.header{
+    grid-area: header;
+    height: 10vh;
+}
+.jumbotron{
+    grid-area: jumbotron;
+    height: 45vh;
+}
+.banner{
+    grid-area: banner;
+    height: 20vh;
+}
+.fproducts{
+    grid-area: fproducts;
+    height: 30vh;
+}
+.footer{
+    grid-area: footer;
+    height: 20vh;
+}
+
+.item{
+    background-color:  cadetblue;
+    padding: 10px;
+    color: white;
+    border-radius: 10px;
+}
+
+.container {
+    display: grid;
+    /*grid-template: filas / columnas */
+    /*grid-template: 120px 1fr 120px / 400px 1fr;*/
+    grid-template-areas: "header    header     header    header    header     header"
+                        "jumbotron jumbotron jumbotron jumbotron  jumbotron jumbotron"
+                        "banner      banner    banner    banner    banner     banner"
+                        "fproducts  fproducts  fproducts  fproducts  fproducts  fproducts "
+                        "footer      footer    footer     footer    footer    footer";
+    grid-gap: 10px;
+}
