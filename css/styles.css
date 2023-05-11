@@ -21,7 +21,6 @@
 
 .item{
     background-color:  cadetblue;
-    padding: 10px;
     color: white;
     border-radius: 10px;
 }
@@ -35,5 +34,33 @@
                         "banner      banner    banner    banner    banner     banner"
                         "fproducts  fproducts  fproducts  fproducts  fproducts  fproducts "
                         "footer      footer    footer     footer    footer    footer";
-    grid-gap: 10px;
+                        
+    gap: 10px;
 }
+
+ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #65ea33;
+    height: 5vh;
+  }
+  
+  li {
+    align-self:center;
+  }
+  
+  li a {
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: hsl(103, 100%, 52%);
+    border-radius: 10px;
+  }
