@@ -50,7 +50,7 @@
     gap: 10px;
 }
   /*ESTILOS PARA EL HEADER */
- ul {
+ header ul {
     display: flex;
     justify-content: center;
     list-style-type: none;
@@ -61,18 +61,18 @@
     height: 5vh;
   }
   
-  li {
+  header li {
     align-self:center;
   }
   
-  li a {
+  header li a {
     color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
   }
   
-   li a:hover {
+  header li a:hover {
     background-color: hsl(103, 100%, 52%);
     border-radius: 10px;
   }
@@ -107,12 +107,12 @@
     padding: 14px 16px;
     color: #65ea33;  
 }
-div a {
+header div a {
     color: white;
     text-align: center;
     text-decoration: none;
   }
-div a:hover {
+header div a:hover {
     opacity: 0.4;
     border-radius: 10px;
 }
@@ -133,7 +133,10 @@ div a:hover {
 /* CSS DE LA PARTE DEL FOOTER */
 /* Lo voy a dejar comentado por ahora, tenemos que ver que no se superponga con los demas estilos */
 
- /* .contenedor-footer {
+
+
+.contenedor-footer {
+    background-color: #1c1f1b;
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
@@ -158,6 +161,7 @@ div a:hover {
 }
 
 .footer-link ul li h4 {
+    color: #65ea33;
     padding: 0.5rem 0;
     margin: 0.5rem 0;
 
@@ -183,7 +187,7 @@ div a:hover {
     text-align: center;
     background-color: rgba(255, 255, 255, 0.7);
     border-radius: 50px;
-    padding: 10px;
+    padding: 10px 12px;
     margin: 5px;
     display:inline-block ;
     transition: all .5s ease;
@@ -192,7 +196,7 @@ div a:hover {
 }
 
 .iconos-redes a:hover {
-    background-color: rgba(71, 226, 66, 0.856);
+    background-color: #65ea33;
     color: rgb(255, 255, 255);
     
 
@@ -221,4 +225,4 @@ div a:hover {
     display: inline-block;
 }
 }
- */
+ 
