@@ -2,132 +2,150 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="css/styles.css" />
-    <title>Teknium Hardware Store</title>
-    <script src="https://kit.fontawesome.com/093baccacb.js" crossorigin="anonymous"></script>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/styles.css" />
+	<title>Teknium Hardware Store</title>
+	<!--USO DE ICONOS DE FONTAWESOME-->
+	<script src="https://kit.fontawesome.com/093baccacb.js" crossorigin="anonymous"></script>
+	<!--USO DE FUENTES EXTERNAS-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <section class="container">
-        <header class="item header">
-            <div>
-                <p>Logo + input busqueda + ingresar + carrito</p>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="aboutUs.html">Acerca de nosotros</a></li>
-                    <li><a href="qfreq.html">Preguntas frequentes</a></li>
-                    <li><a href="contact.html">Contacto</a></li>
-                </ul>
-            </nav>
-        </header>
-        <main class="item jumbotron">
-            <p>Banner principal o jumbotron o carrousel</p>
-        </main>
-        <section class="item banner">
-            <p>Banner inferior estatico , flyer o propaganda de alguna marca</p>
-        </section>
-        <section class="item fproducts">
-            <p>Productos destacados con posibilidad de desplazarse hacia a los lados para acceder a mas productos</p>
-        </section>
+	<section class="container">
+	<!--SECCION HEADER -->
+		<header class="item header">
+			<div class="header-logo">
+				<div class="item-flex">
+					<div><i class="fa-solid fa-computer"></i></div>
+					<div><h1>Teknium Store Hardware</h1></div>
+				</div>
+				<div class="item-flex">
+					<div><input type="search" class="input-search" placeholder="Buscar..."></div>
+					<div><button class="button-search"><i class="fa-solid fa-magnifying-glass" ></i></button></div>	
+				</div>
+				<div class="item-flex">
+					<div class="item-flex"><i class="fa-solid fa-user"></i> <a href="index.html">Ususario</a></div>
+					<div class="item-flex"><i class="fa-solid fa-cart-shopping"></i><a href="index.html">Carrito</a></div>
+				</div >
+			</div>
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="aboutUs.html">Acerca de nosotros</a></li>
+					<li><a href="qfreq.html">Preguntas frequentes</a></li>
+					<li><a href="contact.html">Contacto</a></li>
+				</ul>
+			</nav>
+		</header>
+		<!--SECCION MAIN-->
+		<main class="item jumbotron">
+			<p>Banner principal o jumbotron o carrousel</p>
+		</main>
+		<!--SECCION BANNER-->
+		<section class="item banner">
+			<p>Banner inferior estatico , flyer o propaganda de alguna marca</p>
+		</section>
+		<!--SECCION PRODUCTOS DESTACADOS-->
+		<section class="item fproducts">
+			<p>Productos destacados con posibilidad de desplazarse hacia a los lados para acceder a mas productos</p>
+		</section>
+		<!--SECCION FOOTER-->
+		<footer class="item footer">
+			<div class="contenedor-footer">
+				<div class="footer-link contactanos">
+					<ul>
+						<li>
+							<h4>Contactanos</h4>
+						</li>
+						<li><a href="https://goo.gl/maps/qDytuY4sUen7yscJ8" target="_blank">Remedios de Escalada de San
+								Martin 3875, Floresta (CABA)</a> </li>
+						<li><a href="https://goo.gl/maps/bXH2Ps2wsheR5icn8" target="_blank">Florida 537 PB, Local 379,
+								Microcentro (CABA)</a></li>
+						<li><a href="">Whatsapp: +54 11 2357-5522</a></li>
+						<li><a href="mailto:empresas@maximus.com.ar">empresas@maximus.com.ar</a></li>
+					</ul>
+				</div>
 
-       
-        <footer class="item footer">
-            <div class="contenedor-footer">
-                <div class="footer-link contactanos">
+				<!-- Comente esta parte porque se me ocurrio añadir a cada uno su enlace y no se podria con horarios igualmente lo podemos agregar -->
+				<!-- <div class="footer-link horarios">
 
-                    <ul>
-                        <li>
-                            <h4>Contactanos</h4>
-                        </li>
-                        <li><a href="https://goo.gl/maps/qDytuY4sUen7yscJ8" target="_blank">Remedios de Escalada de San
-                                Martin 3875, Floresta (CABA)</a> </li>
-                        <li><a href="https://goo.gl/maps/bXH2Ps2wsheR5icn8" target="_blank">Florida 537 PB, Local 379,
-                                Microcentro (CABA)</a></li>
-                        <li><a href="">Whatsapp: +54 11 2357-5522</a></li>
-                        <li><a href="mailto:empresas@maximus.com.ar">empresas@maximus.com.ar</a></li>
-                    </ul>
-                </div>
+					<ul>
+						<li>
+							<h4> Nuestros horarios</h4>
+						</li>
+						<li>Floresta</li>
+						<li>Lun a Vie 9:00 AM -18:00 PM</li>
+						<li>Sab 10:00 AM -14:30 PM</li>
 
-                <!-- Comente esta parte porque se me ocurrio añadir a cada uno su enlace y no se podria con horarios igualmente lo podemos agregar -->
-                <!-- <div class="footer-link horarios">
+					</ul>
+					<ul>
+						<li>Florida Local</li>
+						<li>Lun a Vie 9:00 AM- 18:00 PM</li>
+						<li>Sab 10:00 AM -14:30 PM</li>
+					</ul>
+				</div> -->
+				<div class="footer-link ayuda">
 
-                    <ul>
-                        <li>
-                            <h4> Nuestros horarios</h4>
-                        </li>
-                        <li>Floresta</li>
-                        <li>Lun a Vie 9:00 AM -18:00 PM</li>
-                        <li>Sab 10:00 AM -14:30 PM</li>
-
-                    </ul>
-                    <ul>
-                        <li>Florida Local</li>
-                        <li>Lun a Vie 9:00 AM- 18:00 PM</li>
-                        <li>Sab 10:00 AM -14:30 PM</li>
-                    </ul>
-                </div> -->
-                <div class="footer-link ayuda">
-
-                    <ul>
-                        <li>
-                            <h4>Ayuda</h4>
-                        </li>
-                      
-                        <li><a href="">Tramite de Garantia</a></li>
-                        <li><a href="">Boton de arrepentimiento</a></li>
-                        <li><a href="">FAQ</a></li>
-                    </ul>
-
-
-                </div>
-                <div class="footer-link defconsumidor">
-
-                    <ul>
-                        <li>
-                            <h4>Defensa al consumidor</h4>
-                        </li>
-                        <li><a href="">Ley de defensa del consumidor</a></li>
-                        <li><a href="">Conoce tus derechos como consumidor</a></li>
-                    </ul>
-
-
-                </div>
-                <div class="footer-link seguinos">
-
-                    <div><ul>
-                        <li>
-                            <h4>Seguinos</h4>
-                        </li>
-                    </ul></div>
-                   <div class="iconos-redes">
-                   <span> <a href=""><i class="fa-brands fa-twitter"></i></a><a href=""><i class="fa-brands fa-facebook"></i></a></span>
-                   <span>
-                    <a href=""><i class="fa-brands fa-tiktok"></i></a>
-
-                    <a href=""><i class="fa-brands fa-instagram"></i></a>
-                   </span>
-                   </div>
+					<ul>
+						<li>
+							<h4>Ayuda</h4>
+						</li>
+					  
+						<li><a href="">Tramite de Garantia</a></li>
+						<li><a href="">Boton de arrepentimiento</a></li>
+						<li><a href="">FAQ</a></li>
+					</ul>
 
 
+				</div>
+				<div class="footer-link defconsumidor">
+
+					<ul>
+						<li>
+							<h4>Defensa al consumidor</h4>
+						</li>
+						<li><a href="">Ley de defensa del consumidor</a></li>
+						<li><a href="">Conoce tus derechos como consumidor</a></li>
+					</ul>
 
 
-                </div>
+				</div>
+				<div class="footer-link seguinos">
 
-                <!-- Lo comente porque no se si vamos a poner algun logo o algo, lo podemos agregar -->
-                <!-- <div class="footer-link logo">
-                    <h4>Espacio logo</h4>
-            
-                
-                </div>  -->
+					<div><ul>
+						<li>
+							<h4>Seguinos</h4>
+						</li>
+					</ul></div>
+				   <div class="iconos-redes">
+				   <span> <a href=""><i class="fa-brands fa-twitter"></i></a><a href=""><i class="fa-brands fa-facebook"></i></a></span>
+				   <span>
+					<a href=""><i class="fa-brands fa-tiktok"></i></a>
 
-            </div>
-        </footer>
-    </section>
+					<a href=""><i class="fa-brands fa-instagram"></i></a>
+				   </span>
+				   </div>
+
+
+
+
+				</div>
+
+				<!-- Lo comente porque no se si vamos a poner algun logo o algo, lo podemos agregar -->
+				<!-- <div class="footer-link logo">
+					<h4>Espacio logo</h4>
+			
+				
+				</div>  -->
+
+			</div>
+		</footer>
+	</section>
 </body>
 
 </html>
