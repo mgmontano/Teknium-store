@@ -17,21 +17,24 @@
 
 <body>
 	<section class="container">
-	<!--SECCION HEADER -->
+		<!--SECCION HEADER -->
 		<header class="item header">
 			<div class="header-logo">
 				<div class="item-flex">
 					<div><i class="fa-solid fa-computer"></i></div>
-					<div><h1>Teknium Store Hardware</h1></div>
+					<div>
+						<h1>Teknium Store Hardware</h1>
+					</div>
 				</div>
 				<div class="item-flex">
 					<div><input type="search" class="input-search" placeholder="Buscar..."></div>
-					<div><button class="button-search"><i class="fa-solid fa-magnifying-glass" ></i></button></div>	
+					<div><button class="button-search"><i class="fa-solid fa-magnifying-glass"></i></button></div>
 				</div>
 				<div class="item-flex">
 					<div class="item-flex"><i class="fa-solid fa-user"></i> <a href="index.html">Ususario</a></div>
-					<div class="item-flex"><i class="fa-solid fa-cart-shopping"></i><a href="index.html">Carrito</a></div>
-				</div >
+					<div class="item-flex"><i class="fa-solid fa-cart-shopping"></i><a href="index.html">Carrito</a>
+					</div>
+				</div>
 			</div>
 			<nav>
 				<ul>
@@ -44,11 +47,33 @@
 		</header>
 		<!--SECCION MAIN-->
 		<main class="item jumbotron">
-			<p>Banner principal o jumbotron o carrousel</p>
+				<!-- Full-width images with number and caption text -->
+				<div class="mySlides fade">
+					<img src="img/hot-sale-teknium.jpg" >
+				</div>
+
+				<div class="mySlides fade">
+					<img src="img\Diablo_IV.jpg">
+				</div>
+
+				<div class="mySlides fade">
+					<img src="img/asus_rog.jpg" >
+				</div>
+				<!-- Next and previous buttons -->
+				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides(1)">&#10095;</a>
+		
+
+			<!-- The dots/circles -->
+			<div style="text-align:center">
+				<span class="dot" onclick="currentSlide(1)"></span>
+				<span class="dot" onclick="currentSlide(2)"></span>
+				<span class="dot" onclick="currentSlide(3)"></span>
+			</div>
 		</main>
 		<!--SECCION BANNER-->
 		<section class="item banner">
-			<p>Banner inferior estatico , flyer o propaganda de alguna marca</p>
+			<img src="img/banner_12.jpg" >		
 		</section>
 		<!--SECCION PRODUCTOS DESTACADOS-->
 		<section class="item fproducts">
@@ -95,7 +120,7 @@
 						<li>
 							<h4>Ayuda</h4>
 						</li>
-					  
+
 						<li><a href="">Tramite de Garantia</a></li>
 						<li><a href="">Boton de arrepentimiento</a></li>
 						<li><a href="">FAQ</a></li>
@@ -117,23 +142,22 @@
 				</div>
 				<div class="footer-link seguinos">
 
-					<div><ul>
-						<li>
-							<h4>Seguinos</h4>
-						</li>
-					</ul></div>
-				   <div class="iconos-redes">
-				   <span> <a href=""><i class="fa-brands fa-twitter"></i></a><a href=""><i class="fa-brands fa-facebook"></i></a></span>
-				   <span>
-					<a href=""><i class="fa-brands fa-tiktok"></i></a>
+					<div>
+						<ul>
+							<li>
+								<h4>Seguinos</h4>
+							</li>
+						</ul>
+					</div>
+					<div class="iconos-redes">
+						<span> <a href=""><i class="fa-brands fa-twitter"></i></a><a href=""><i
+									class="fa-brands fa-facebook"></i></a></span>
+						<span>
+							<a href=""><i class="fa-brands fa-tiktok"></i></a>
 
-					<a href=""><i class="fa-brands fa-instagram"></i></a>
-				   </span>
-				   </div>
-
-
-
-
+							<a href=""><i class="fa-brands fa-instagram"></i></a>
+						</span>
+					</div>
 				</div>
 
 				<!-- Lo comente porque no se si vamos a poner algun logo o algo, lo podemos agregar -->
@@ -146,6 +170,34 @@
 			</div>
 		</footer>
 	</section>
+	<script>
+		let slideIndex = 1;
+		showSlides(slideIndex);
+		
+		function plusSlides(n) {
+		  showSlides(slideIndex += n);
+		}
+		
+		function currentSlide(n) {
+		  showSlides(slideIndex = n);
+		}
+		
+		function showSlides(n) {
+		  let i;
+		  let slides = document.getElementsByClassName("mySlides");
+		  let dots = document.getElementsByClassName("dot");
+		  if (n > slides.length) {slideIndex = 1}    
+		  if (n < 1) {slideIndex = slides.length}
+		  for (i = 0; i < slides.length; i++) {
+			slides[i].style.display = "none";  
+		  }
+		  for (i = 0; i < dots.length; i++) {
+			dots[i].className = dots[i].className.replace(" active", "");
+		  }
+		  slides[slideIndex-1].style.display = "block";  
+		  dots[slideIndex-1].className += " active";
+		}
+		</script>
 </body>
 
 </html>
