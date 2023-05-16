@@ -6,6 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/styles.css" />
     <title>Teknium Hardware Store</title>
+
+ 	<!--USO DE ICONOS DE FONTAWESOME-->
+     <script src="https://kit.fontawesome.com/093baccacb.js" crossorigin="anonymous"></script>
+     <!--USO DE FUENTES EXTERNAS-->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
 </head>
 <body>
     <section class="container">
@@ -20,7 +27,7 @@
                 </ul>
             </nav>
         </header>
-        <main class="item jumbotron">
+        <!-- <main class="item jumbotron">
             <p>Banner principal o jumbotron o carrousel</p>
         </main>
         <section class="item banner">
@@ -28,10 +35,185 @@
         </section>
         <section class="item fproducts">
             <p>Productos destacados con posibilidad de desplazarse hacia a los lados para acceder a mas productos</p>
-        </section>
-        <footer class="item footer">
-            <p>Footer con redes sociales + mapa del sitio , imagenes e iconos</p>
-        </footer>
+        </section> -->
+        <!-- Formulario de Contacto -->
+        <!-- <main> -->
+            <form action="" target="_blank">
+                <div class="container-in-form">
+                    <div class="form-item box-tittle">
+                        <h1>CONTACTANOS</h1>
+                    <h2>Si tenes alguna duda o queres hacer un reclamo podes dejarnos tus datos y tu consulta para que
+                        podamos resolverlo </h2>
+                    </div>
+                    <div class="form-item box-data">
+                        <label for="firstname">Nombre: * </label>
+                        <input type="text" name="Nombre" id="firstname" required>
+                    </div>
+    
+                    <div class="form-item box-data">
+                        <label for="lastname">Apellido: *</label>
+                        <input type="text" name="Apellido" id="lastname"  required>
+                    </div>
+    
+                    <div class="form-item box-data">
+                        <label for="phonenumber">Telefono: *</label>
+                        <input type="tel" name="Telefono" id="phonenumber"
+                            required>
+                    </div>
+    
+                    <div class="form-item box-data">
+                        <label for="mail">E-mail: *</label>
+                        <input type="email" name="E-mail" id="mail"  required>
+                    </div>
+    
+                    <div class="form-item box-choose box-choose-1">
+                        <h4>¿Tenes experiencia comprando nuestros productos?</h4>
+                       <div>
+                        <div> <input type="radio" name="productexp" id="yes" value="si">
+                            <label for="yes">Si</label>
+                        </div>
+                        <div> <input type="radio" name="productexp" id="no" value="no">
+                            <label for="no">No</label>
+                        </div>
+                       </div>
+                    </div>
+    
+                    <div class="form-item box-choose box-choose-2">
+                        <h4>¿Sobre que producto estas buscando informacion?</h4>
+                      <div>
+                        <div> <input type="checkbox" name="products" value="Notebooks" id="opcion1">
+                            <label for="opcion1">Notebooks</label>
+                        </div>
+                        <div><input type="checkbox" name="products" value="Notebooks" id="opcion2">
+                            <label for="opcion2">Notebooks</label>
+                        </div>
+                        <div><input type="checkbox" name="products" value="Notebooks" id="opcion3">
+                            <label for="opcion3">Notebooks</label>
+                        </div>
+                        <div><input type="checkbox" name="products" value="Notebooks" id="opcion4">
+                            <label for="opcion4">Otros</label>
+                        </div>
+                      </div>
+                    
+                    </div>
+    
+                    <!-- <div class="form-item place-asunto">
+                        <label for="topic">Asunto: *</label>
+                        <select name="asunto" id="topic" required>
+                            <option>Reclamo</option>
+                            <option>Precio</option>
+                            <option>Devolucion</option>
+                            <option>Otro</option>
+                        </select>
+                    </div> -->
+    
+                    <div class="form-item place-text">
+                        <div><label for="comentarios">Mensaje: *</label></div>
+                        <textarea name="Mensaje" id="comentarios" required></textarea>
+                        <input type="checkbox" name="publicidad" value="publicidad" id="info">
+                        <label for="info">Acepto recibir información sobre las novedades y promociones de (...) </label>
+                    </div>
+    
+                    <!-- <div class="form-item nov-boton">
+                        <input type="checkbox" name="publicidad" value="publicidad" id="info">
+                        <label for="info">Acepto recibir información sobre las novedades y promociones de (...) </label>
+                    </div> -->
+                    <div class="form-item box-boton">
+                        <input type="submit" value="Enviar">
+                    </div>
+    
+                </div>
+        <!-- </main> -->
+		<!--SECCION FOOTER-->
+		<footer class="item footer">
+			<div class="contenedor-footer">
+				<div class="footer-link contactanos">
+					<ul>
+						<li>
+							<h4>Contactanos</h4>
+						</li>
+						<li><a href="https://goo.gl/maps/qDytuY4sUen7yscJ8" target="_blank">Remedios de Escalada de San
+								Martin 3875, Floresta (CABA)</a> </li>
+						<li><a href="https://goo.gl/maps/bXH2Ps2wsheR5icn8" target="_blank">Florida 537 PB, Local 379,
+								Microcentro (CABA)</a></li>
+						<li><a href="">Whatsapp: +54 11 2357-5522</a></li>
+						<li><a href="mailto:empresas@maximus.com.ar">empresas@maximus.com.ar</a></li>
+					</ul>
+				</div>
+
+				<!-- Comente esta parte porque se me ocurrio añadir a cada uno su enlace y no se podria con horarios igualmente lo podemos agregar -->
+				<!-- <div class="footer-link horarios">
+
+					<ul>
+						<li>
+							<h4> Nuestros horarios</h4>
+						</li>
+						<li>Floresta</li>
+						<li>Lun a Vie 9:00 AM -18:00 PM</li>
+						<li>Sab 10:00 AM -14:30 PM</li>
+
+					</ul>
+					<ul>
+						<li>Florida Local</li>
+						<li>Lun a Vie 9:00 AM- 18:00 PM</li>
+						<li>Sab 10:00 AM -14:30 PM</li>
+					</ul>
+				</div> -->
+				<div class="footer-link ayuda">
+
+					<ul>
+						<li>
+							<h4>Ayuda</h4>
+						</li>
+
+						<li><a href="">Tramite de Garantia</a></li>
+						<li><a href="">Boton de arrepentimiento</a></li>
+						<li><a href="">FAQ</a></li>
+					</ul>
+
+
+				</div>
+				<div class="footer-link defconsumidor">
+
+					<ul>
+						<li>
+							<h4>Defensa al consumidor</h4>
+						</li>
+						<li><a href="">Ley de defensa del consumidor</a></li>
+						<li><a href="">Conoce tus derechos como consumidor</a></li>
+					</ul>
+
+
+				</div>
+				<div class="footer-link seguinos">
+
+					<div>
+						<ul>
+							<li>
+								<h4>Seguinos</h4>
+							</li>
+						</ul>
+					</div>
+					<div class="iconos-redes">
+						<span> <a href=""><i class="fa-brands fa-twitter"></i></a><a href=""><i
+									class="fa-brands fa-facebook"></i></a></span>
+						<span>
+							<a href=""><i class="fa-brands fa-tiktok"></i></a>
+
+							<a href=""><i class="fa-brands fa-instagram"></i></a>
+						</span>
+					</div>
+				</div>
+
+				<!-- Lo comente porque no se si vamos a poner algun logo o algo, lo podemos agregar -->
+				<!-- <div class="footer-link logo">
+					<h4>Espacio logo</h4>
+			
+				
+				</div>  -->
+
+			</div>
+		</footer>
     </section>    
 </body>
 </html>
