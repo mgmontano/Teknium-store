@@ -315,6 +315,7 @@ form h2 {
     text-align: center;
     padding: .25rem;
     margin:.5rem;
+    font-weight: 500;
 
 }
 form h1{
@@ -395,12 +396,12 @@ form input{
         border: none;
         padding: 1rem 20px;
         border-radius: 3px;
-        background-color:  #64ea33;
+        background-color:  #64ea33ab;
         font-size: 1rem;
         font-weight: bold;
     }
 .box-boton input:hover{
-    background-color:  #65ea3390;
+    background-color:  hsl(103, 100%, 52%);
 }
    
 @media all and (min-width:900px){
@@ -463,3 +464,139 @@ form input{
 
 } */
 
+
+/* Pagina sobre nosotros CSS */
+.contendor-about-us{
+    width: 100vw ;
+    margin: 0px;
+    box-sizing: border-box;
+    display:grid;
+    grid-template-columns: 1fr;
+
+}
+.contendor-about-us h1{
+    font-size: 2rem;
+    text-align: center;
+    background-color: #64ea33d5;
+    padding: 2em 1em ;
+    /* margin: .5em; */
+
+}
+.contendor-about-us h3{
+    margin: 1em;
+    /* padding: .5em; */
+}
+/*  */
+.item-about-us{
+    padding: 1em;
+    margin: 0px 5vw 2em ;
+    /* border-top: 1px solid black; */
+    border-bottom: 1px solid black;
+}
+
+.item-about-us :first-child{
+    border: none;
+
+}
+.item-opiniones {
+    border: 1px solid black;
+    margin: 1em;
+    padding: .5em;
+}
+
+.boton-ver-mas{
+    text-align: center;
+    background-color: #64ea33;
+    cursor: pointer;
+}
+.boton-ver-mas a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+   
+}
+.opiniones{
+    display: grid;
+    grid-template-columns: auto;
+}
+.opiniones h3{
+    text-align: center;
+}
+
+.opiniones .item-opiniones {
+   
+}
+
+
+@media all and (min-width:600px){
+    .opiniones{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.opiniones h3, .boton-ver-mas{
+    grid-column: 1/3;
+}
+}
+
+/* Aca termina CSS de sobre nosotros */
+
+/* CSS DE FAQ */
+.container-faq{
+    width: 100vw ;
+    /* margin: 0px; */
+    /* min-width: 400px; */
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: auto;
+    /* flex-direction: column; */
+    justify-content:center ;
+    align-items: center;
+    /* margin: 1vw; */
+    /* padding: 1vw; */
+}
+.container-faq h1{
+    text-align: center;
+    padding: 2em 1em ;
+    font-size: 2rem;
+    background-color: #64ea33d5;
+    margin: 0px;
+
+}
+
+.faq-item h2{
+    text-align: center;
+    font-size: 1em;
+    transition: all .5s ease;
+}
+.faq-item h2:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.faq-item{
+    /* background-color: #64ea33; */
+    width: 80%;
+    border-bottom: 1px solid black;
+     padding: 1em;
+     margin: 0px 8vw 2em ;
+    /* padding: 1em;  */
+    /* margin: 1em; */
+}
+.faq-item a {
+    text-decoration: none;
+    color: black;
+}
+
+.question-faq{
+    margin: 0;
+    padding:.5em 1em;
+}
+.answer-faq{
+    background-color: white;
+    margin: 0;
+    padding:.5em 1em;
+}
+
+
+/* TERMINA CSS DE FAQ */
