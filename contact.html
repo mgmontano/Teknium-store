@@ -16,17 +16,34 @@
 </head>
 <body>
     <section class="container">
-        <header class="item header">
-            <div><p>Logo + input busqueda + ingresar + carrito</p></div>
-            <nav>
-                <ul>                    
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="aboutUs.html">Acerca de nosotros</a></li>
-                    <li><a href="qfreq.html">Preguntas frequentes</a></li>
-                    <li><a href="contact.html">Contacto</a></li>                 
-                </ul>
-            </nav>
-        </header>
+        <!--SECCION HEADER -->
+		<header class="item header">
+			<div class="header-logo">
+				<div class="item-flex">
+					<div><i class="fa-solid fa-computer"></i></div>
+					<div>
+						<h1>Teknium Store Hardware</h1>
+					</div>
+				</div>
+				<div class="item-flex">
+					<div><input type="search" class="input-search" placeholder="Buscar..."></div>
+					<div><button class="button-search"><i class="fa-solid fa-magnifying-glass"></i></button></div>
+				</div>
+				<div class="item-flex">
+					<div class="item-flex"><i class="fa-solid fa-user"></i> <a href="index.html">Ususario</a></div>
+					<div class="item-flex"><i class="fa-solid fa-cart-shopping"></i><a href="index.html">Carrito</a>
+					</div>
+				</div>
+			</div>
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="aboutUs.html">Acerca de nosotros</a></li>
+					<li><a href="qfreq.html">Preguntas frequentes</a></li>
+					<li><a href="contact.html">Contacto</a></li>
+				</ul>
+			</nav>
+		</header>
         <!-- <main class="item jumbotron">
             <p>Banner principal o jumbotron o carrousel</p>
         </main>
@@ -47,23 +64,23 @@
                     </div>
                     <div class="form-item box-data">
                         <label for="firstname">Nombre: * </label>
-                        <input type="text" name="Nombre" id="firstname" required>
+                        <input type="text" name="Nombre" id="firstname" placeholder="Ingrese su nombre" required>
                     </div>
     
                     <div class="form-item box-data">
                         <label for="lastname">Apellido: *</label>
-                        <input type="text" name="Apellido" id="lastname"  required>
+                        <input type="text" name="Apellido" id="lastname" placeholder="Ingrese su apellido" required>
                     </div>
     
                     <div class="form-item box-data">
                         <label for="phonenumber">Telefono: *</label>
                         <input type="tel" name="Telefono" id="phonenumber"
-                            required>
+                           placeholder="Ingrese su teléfono" required>
                     </div>
     
                     <div class="form-item box-data">
                         <label for="mail">E-mail: *</label>
-                        <input type="email" name="E-mail" id="mail"  required>
+                        <input type="email" name="E-mail" id="mail" placeholder="Ingrese su email"  required>
                     </div>
     
                     <div class="form-item box-choose box-choose-1">
@@ -84,13 +101,13 @@
                         <div> <input type="checkbox" name="products" value="Notebooks" id="opcion1">
                             <label for="opcion1">Notebooks</label>
                         </div>
-                        <div><input type="checkbox" name="products" value="Notebooks" id="opcion2">
-                            <label for="opcion2">Notebooks</label>
+                        <div><input type="checkbox" name="products" value="Netbooks" id="opcion2">
+                            <label for="opcion2">Netbooks</label>
                         </div>
-                        <div><input type="checkbox" name="products" value="Notebooks" id="opcion3">
-                            <label for="opcion3">Notebooks</label>
+                        <div><input type="checkbox" name="products" value="Discos Sólidos" id="opcion3">
+                            <label for="opcion3">Discos Sólidods</label>
                         </div>
-                        <div><input type="checkbox" name="products" value="Notebooks" id="opcion4">
+                        <div><input type="checkbox" name="products" value="Otros" id="opcion4">
                             <label for="opcion4">Otros</label>
                         </div>
                       </div>
@@ -109,8 +126,8 @@
     
                     <div class="form-item place-text">
                         <div><label for="comentarios">Mensaje: *</label></div>
-                        <textarea name="Mensaje" id="comentarios" required></textarea>
-                        <input type="checkbox" name="publicidad" value="publicidad" id="info">
+                        <textarea name="Mensaje" id="comentarios" placeholder="Comentarios" required></textarea>
+                        <input type="checkbox" name="publicidad" value="publicidad" id="info" required>
                         <label for="info">Acepto recibir información sobre las novedades y promociones de (...) </label>
                     </div>
     
@@ -136,7 +153,7 @@
 								Martin 3875, Floresta (CABA)</a> </li>
 						<li><a href="https://goo.gl/maps/bXH2Ps2wsheR5icn8" target="_blank">Florida 537 PB, Local 379,
 								Microcentro (CABA)</a></li>
-						<li><a href="">Whatsapp: +54 11 2357-5522</a></li>
+						<li><a href="https://api.whatsapp.com/send?phone=5491123575522">Whatsapp: +54 11 2357-5522</a></li>
 						<li><a href="mailto:empresas@maximus.com.ar">empresas@maximus.com.ar</a></li>
 					</ul>
 				</div>
