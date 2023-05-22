@@ -2,8 +2,8 @@
 * {
     font-family: 'Source Sans Pro', sans-serif;
     margin: 0;
-    padding: 0;
-    {box-sizing:border-box}
+    padding: 0; 
+    box-sizing:border-box
 }
 /*ESTILOS PARA EL GRID GLOBAL */
 .header {
@@ -24,14 +24,10 @@
 
 .fproducts {
     grid-area: fproducts;
-    height: 30vh;
 }
 
 .footer {
     grid-area: footer;
-    /* height: 20vh; */
-    margin: 0;
-    padding: 0;
     width: 100vw;
 }
 
@@ -56,9 +52,6 @@
     display: flex;
     justify-content: center;
     list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
     background-color: #65ea33;
     height: 5vh;
   }
@@ -84,7 +77,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-color: black;
+    background-color: #1c1f1b;
   }
   .item-flex{
     display: flex;
@@ -131,6 +124,20 @@ header div a:hover {
     border-radius: 10px;
     height: 4vh;
     width:20vh;
+}
+@media screen and (max-width: 900px) {
+    .header{width: auto;font-size: 1.2vh;}
+    .header-logo{justify-content: center;align-items: center;}
+    .input-search{width:12vh;}
+    .banner img{src: local(img/razer-bannerpng);}
+}
+@media screen and (max-width: 600px) {
+    .header{display: grid; height: auto;}
+    .header-logo{display : grid;align-content: center;justify-content:center;height: auto;}
+    .header-logo .item-flex{display : grid;align-content: center;justify-content:center;}
+    .jumbotron{height: auto;}
+    .banner{display: none;}
+    .input-search{width:25vh;}
 }
 
  /*ESTILOS PARA EL MAIN*/
@@ -183,7 +190,6 @@ header div a:hover {
     display: inline-block;
     transition: background-color 0.6s ease;
   }
-  
   .active, .dot:hover {
     background-color: #717171;
   }
@@ -205,6 +211,66 @@ header div a:hover {
     height: 15vh;
 }
 
+/*ESTILOS PARA PRODUCTOS DESTACADOS*/
+
+.fproducts {
+    background-color:#65ea33;
+    padding: 2vh;
+}
+.fproducts h2{
+    margin: 1vh;
+}
+.box-cards{
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    align-content: center;
+    justify-content: center;
+}
+.card-modulo{
+    display: grid;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 15px;
+    width: 20vh;
+    height: 25vh;
+    border: 2px solid #1c1f1b;
+    background-color: #1c1f1b;
+}
+.card-modulo:hover{
+    border: 2px solid white;
+    box-shadow: 0px 2px 0px 5px white;
+    transform: translateY(-5px);
+}
+.card-imagen{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white !important;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.card-texto{
+    align-content: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+.card-texto span {
+    display: block;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
+@media screen and (max-width: 900px) {
+    .card-desk{display: none;}
+    .card-modulo{width: 22vh;height: 28vh;}
+}
+@media screen and (max-width: 600px) {
+    .dot{display: none;}
+    .card-desk{display: none;}
+    .card-tab{display: none;}
+}
+
 /* CSS DE LA PARTE DEL FOOTER */
 /* Lo voy a dejar comentado por ahora, tenemos que ver que no se superponga con los demas estilos */
 
@@ -222,39 +288,29 @@ header div a:hover {
     width: 99%;
 
 }
-
 .footer-link ul {
     list-style: none;
-
 }
-
 .footer-link li a {
     text-decoration: none;
     color: #ffffff;
 }
-
 .footer-link ul li h4 {
     color: #65ea33;
     padding: 0.5rem 0;
     margin: 0.5rem 0 0 0;
-
 }
-
 .footer-link ul li {
     margin-bottom: .5rem;
-
 }
-
 .footer-link>ul li a{
     color: rgba(255, 255, 255, 0.7);
     transition: all .5s ease;
-
 }
 .footer-link > ul li a:hover {
     color: #ffffff;
     font-weight:500 ;
 }
-
 .iconos-redes a {
     color: #000000;
     text-align: center;
@@ -264,15 +320,11 @@ header div a:hover {
     margin: 5px;
     display:inline-block ;
     transition: all .5s ease;
-
-
 }
 
 .iconos-redes a:hover {
     background-color: #65ea33;
     color: rgb(255, 255, 255);
-    
-
 }
 
 .iconos-redes span{
@@ -523,10 +575,9 @@ form input{
     text-align: center;
 }
 
-.opiniones .item-opiniones {
+/*.opiniones .item-opiniones {
    
-}
-
+}*/
 
 @media all and (min-width:600px){
     .opiniones{
