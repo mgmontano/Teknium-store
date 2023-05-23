@@ -33,9 +33,7 @@
 }
 
 .item {
-    background-color: cadetblue;
     color: white;
-    border-radius: 10px;
 }
 
 .container {
@@ -220,6 +218,8 @@ header div a:hover {
 }
 .fproducts h2{
     margin: 1vh;
+    font-size: 3vh;
+    color: #1c1f1b;
 }
 .box-cards{
     display: flex;
@@ -668,3 +668,17 @@ form input{
 
 
 /* TERMINA CSS DE FAQ */
+
+/* ESTILOS PARA EL IFRAME*/
+.mapouter{
+    position:relative;
+    text-align:right;
+    height:100%;
+    width:100%;
+}
+.gmap_canvas {
+    overflow:hidden;
+    background:none!important;
+    height:100%;
+    width:100%;
+}
