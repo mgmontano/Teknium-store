@@ -3,33 +3,40 @@
     font-family: 'Source Sans Pro', sans-serif;
     margin: 0;
     padding: 0; 
-    box-sizing:border-box
+    box-sizing:border-box;
 }
 /*ESTILOS PARA EL GRID GLOBAL */
 .header {
     grid-area: header;
-    height: 10vh;
+    height: auto;
+    margin: 0px;
+    padding: 0;
 }
 
 .jumbotron {
     grid-area: jumbotron;
     height: 45vh;
     position: relative;
+    margin: 0px;
 }
 
 .banner {
     grid-area: banner;
     height: 15vh;
+    margin: 0px;
 }
 
 .fproducts {
     grid-area: fproducts;
-    /* width: 100vw; */
+    height: auto;
+    margin: 0px;
 }
 
 .footer {
     grid-area: footer;
     width: 100vw;
+    height: auto;
+    margin: 0px;
 }
 
 .item {
@@ -52,8 +59,10 @@
     justify-content: center;
     list-style-type: none;
     background-color: #65ea33;
-    height: 5vh;
-  }
+    height: 6vh;
+    /* lo que agregue */
+    column-gap:1em ;
+}
   
   header li {
     align-self:center;
@@ -62,81 +71,177 @@
   header li a {
     color: white;
     text-align: center;
-    padding: 14px 16px;
     text-decoration: none;
+    /*Lo agregue */
+    font-size: 1.1em ;
+    /* asi o lo podemos hacer en px */
+    padding: .25em 1em;
   }
-  
+   
   header li a:hover {
-    background-color: hsl(103, 100%, 52%);
+    background-color: hsl(103, 100%, 50%);
     border-radius: 10px;
   }
+   
   .header-logo{
-    height: 5vh;
+    /* height: 5vh; */
+    /* cambio para ver si no se desborda el logo */
+    height: 10vh;
+
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     background-color: #1c1f1b;
+
   }
-  .item-flex{
+ 
+     .item-flex{
     display: flex;
     flex-direction: row;
-    padding: 14px 16px;
+    padding: 10px 5px;
+    /* le agregue un margin */
+    margin: 0 .25em;
     text-align: center;
     align-items: center;
   }
+/* agregue esto */
+  .item-flex > span {
+    display: flex;
+    padding: .25em;
+    margin: 0px;
+
+  }
+  
+  .item-flex >span div > h1{
+    margin: .25em;
+    /* padding: .25em;     */
+  }
+
+
 .fa-computer{
     padding: 14px 16px;
     color: #65ea33;
 }
+ 
 .fa-magnifying-glass{
-    padding: 14px 16px;
+    /* padding: 14px 16px; */
+    /* le cambie el padding al boton para que no sea tan grande */
+    padding: 5px;
     color: #65ea33;
 }
+
 .fa-user{
     padding: 14px 16px;
     color: #65ea33;  
 }
+
 .fa-cart-shopping{
     padding: 14px 16px;
     color: #65ea33;  
 }
+
+
 header div a {
     color: white;
     text-align: center;
     text-decoration: none;
   }
-header div a:hover {
+
+  header div a:hover {
     opacity: 0.4;
     border-radius: 10px;
 }
+
 .button-search{
     border: none;
-    border-radius: 10px;
-    margin: 0.5vh;
+    /* border-radius: 10px;*/
+    margin: 0.5vh; 
+    /* lo cambie para que el boton no crezca tanto */
+    border-radius: 5px;
+    padding: 4px;
 }
+
 .button-search:hover {
     opacity: 0.9;
 }
+
 .input-search{
     border: none;
     border-radius: 10px;
-    height: 4vh;
-    width:20vh;
+    height: 5vh;
+    width:30vh;
+    padding: 5px;
+    /* le agregue el mismo margin que el boton que esta al lado */
+    margin: 0.5vh; 
 }
+
 @media screen and (max-width: 900px) {
-    .header{width: auto;font-size: 1.2vh;}
-    .header-logo{justify-content: center;align-items: center;}
-    .input-search{width:12vh;}
+    .header{
+         width: auto;
+        /*font-size: 1.2vh; */
+        font-size: .8em;
+    }
+   
+    .header-logo{
+        justify-content: center;
+        align-items: center;
+    }
+    .input-search{
+        width:12vh;
+    }
     .banner img{src: local(img/razer-bannerpng);}
 }
+
+
+
 @media screen and (max-width: 600px) {
-    .header{display: grid; height: auto;}
-    .header-logo{display : grid;align-content: center;justify-content:center;height: auto;}
-    .header-logo .item-flex{display : grid;align-content: center;justify-content:center;}
-    .jumbotron{height: auto;}
-    .banner{display: none;}
-    .input-search{width:25vh;}
+    .header{
+        display: grid; 
+        height: auto;
+        font-size: .5em;
+    }
+    .header-logo{
+        display : grid;
+        align-content: center;justify-content:center;
+        height: auto;
+        /* agregue */
+        font-size: 2em;
+    }
+    .header-logo .item-flex{
+        /* cambie display grid por el inline-block */
+        display : grid;
+        align-content: center;
+        justify-content:center;}
+
+    .item-flex span > span {
+        display: inline-block;
+    }
+    .jumbotron{
+        height: auto;
+    }
+    .banner{
+        display: none;
+    }
+    .input-search{
+        width:30vh;
+    }
+    .item-flex{
+        margin: 0 .25em;
+        padding: 0 1em;
+    }
+    /* lo agregue */
+    header li a {
+        font-size: 1.6em ;
+      }
+      header ul {
+        height: 7vh;
+    }
+    .fa-user, .fa-cart-shopping{
+    margin-bottom: 0px;
+    padding-bottom: .5em;
+    }
+    
 }
 
  /*ESTILOS PARA EL MAIN*/
@@ -272,86 +377,7 @@ header div a:hover {
     .card-tab{display: none;}
 }
 
-/* CSS DE LA PARTE DEL FOOTER */
-/* Lo voy a dejar comentado por ahora, tenemos que ver que no se superponga con los demas estilos */
 
-.contenedor-footer {
-    background-color: #1c1f1b;
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: row;
-    padding: 0;
-    /* padding-left: 1%; */
-    margin: 0;
-    justify-content: center;
-    align-content: space-around;
-    column-gap: 2rem;
-    width: 100vw;
-
-}
-.footer-link ul {
-    list-style: none;
-}
-.footer-link li a {
-    text-decoration: none;
-    color: #ffffff;
-}
-.footer-link ul li h4 {
-    color: #65ea33;
-    padding: 0.5rem 0;
-    margin: 0.5rem 0 0 0;
-}
-.footer-link ul li {
-    margin-bottom: .5rem;
-}
-.footer-link>ul li a{
-    color: rgba(255, 255, 255, 0.7);
-    transition: all .5s ease;
-}
-.footer-link > ul li a:hover {
-    color: #ffffff;
-    font-weight:500 ;
-}
-.iconos-redes a {
-    color: #000000;
-    text-align: center;
-    background-color: rgba(255, 255, 255, 0.7);
-    border-radius: 50px;
-    padding: 10px 12px;
-    margin: 5px;
-    display:inline-block ;
-    transition: all .5s ease;
-}
-
-.iconos-redes a:hover {
-    background-color: #65ea33;
-    color: rgb(255, 255, 255);
-}
-
-.iconos-redes span{
-    display: inline-block;
-}
-
-@media all and (max-width:900px){
-    .contactanos{display: none;}
-    .horarios{display: none;}
-    .iconos-redes span{
-    display: block;
-}
-.iconos-redes a{
-    display: inline-block;
-}}
-@media all and (max-width:600px){
-    .contactanos{display: none;}
-    .horarios{display: none;}
-    .defconsumidor{display: none;}
-    .iconos-redes span{
-    display: inline-block;}
-    .iconos-redes a{
-    display: inline-block;
-}
-}
- 
 /* CSS DEL FORMULARIO
 Hay cosas que estan comentadas por si después queremos agregarlas sino despues las borramos y si ven algo mal o que quieran cambiar no hay problema  */
 
@@ -361,10 +387,10 @@ Hay cosas que estan comentadas por si después queremos agregarlas sino despues 
 
 form {
     box-sizing: border-box;
-    width: 100%;
+    width: 100vw;
     /* min-width: 400px; */
     max-width: 95vw;
-    margin: 1vw 1vw;
+    margin: 1vw;
 }
 form h2 {
     font-size: 1rem;
@@ -390,6 +416,7 @@ form h4 {
     /* margin: 1rem; */
     /* padding: 1rem; */
     grid-template-columns: auto;
+
 }
 /* item del contenedor */
 .form-item{
@@ -504,6 +531,7 @@ form input{
     background-color:  hsl(103, 100%, 52%);
 }
     /* Cortes de pantalla */
+
 @media all and (min-width:900px){
 
 .container-in-form {
@@ -774,3 +802,84 @@ form input{
     height:100%;
     width:100%;
 }
+
+/* CSS DE LA PARTE DEL FOOTER */
+/* Lo voy a dejar comentado por ahora, tenemos que ver que no se superponga con los demas estilos */
+
+.contenedor-footer {
+    background-color: #1c1f1b;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    padding: 0;
+    /* padding-left: 1%; */
+    margin: 0;
+    justify-content: center;
+    align-content: space-around;
+    column-gap: 2rem;
+    width: 100vw;
+
+}
+.footer-link ul {
+    list-style: none;
+}
+.footer-link li a {
+    text-decoration: none;
+    color: #ffffff;
+}
+.footer-link ul li h4 {
+    color: #65ea33;
+    padding: 0.5rem 0;
+    margin: 0.5rem 0 0 0;
+}
+.footer-link ul li {
+    margin-bottom: .5rem;
+}
+.footer-link>ul li a{
+    color: rgba(255, 255, 255, 0.7);
+    transition: all .5s ease;
+}
+.footer-link > ul li a:hover {
+    color: #ffffff;
+    font-weight:500 ;
+}
+.iconos-redes a {
+    color: #000000;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 50px;
+    padding: 10px 12px;
+    margin: 5px;
+    display:inline-block ;
+    transition: all .5s ease;
+}
+
+.iconos-redes a:hover {
+    background-color: #65ea33;
+    color: rgb(255, 255, 255);
+}
+
+.iconos-redes span{
+    display: inline-block;
+}
+
+@media all and (max-width:900px){
+    .contactanos{display: none;}
+    .horarios{display: none;}
+    .iconos-redes span{
+    display: block;
+}
+.iconos-redes a{
+    display: inline-block;
+}}
+@media all and (max-width:600px){
+    .contactanos{display: none;}
+    .horarios{display: none;}
+    .defconsumidor{display: none;}
+    .iconos-redes span{
+    display: inline-block;}
+    .iconos-redes a{
+    display: inline-block;
+}
+}
+ 
