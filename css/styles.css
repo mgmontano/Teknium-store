@@ -9,7 +9,7 @@
 .header {
     grid-area: header;
     height: auto;
-    margin: 0px;
+    margin: 0;
     padding: 0;
 }
 
@@ -54,7 +54,7 @@
     /*gap: 5px;*/
 }
   /*ESTILOS PARA EL HEADER */
- header ul {
+     header ul {
     display: flex;
     justify-content: center;
     list-style-type: none;
@@ -93,29 +93,26 @@
     justify-content: space-between;
     align-items: center;
     background-color: #1c1f1b;
-
   }
- 
+
      .item-flex{
     display: flex;
     flex-direction: row;
-    padding: 10px 5px;
+    /* padding: 10px 5px; */
     /* le agregue un margin */
+    padding: .5em .25em;
     margin: 0 .25em;
     text-align: center;
     align-items: center;
   }
-/* agregue esto */
-  .item-flex > span {
-    display: flex;
-    padding: .25em;
-    margin: 0px;
 
+  /* agregue esto */
+  .item-flex span {
+    display: flex;
   }
-  
-  .item-flex >span div > h1{
-    margin: .25em;
-    /* padding: .25em;     */
+
+  .item-flex h1{
+    padding: .25em;    
   }
 
 
@@ -159,7 +156,7 @@ header div a {
     margin: 0.5vh; 
     /* lo cambie para que el boton no crezca tanto */
     border-radius: 5px;
-    padding: 4px;
+    padding: 2px;
 }
 
 .button-search:hover {
@@ -189,15 +186,24 @@ header div a {
     }
     .input-search{
         width:15vh;
+    
     }
-    .banner img{src: local(img/razer-bannerpng);}
+    .banner img{src: local(img/razer-bannerpng);
+    }
     .fa-user, .fa-cart-shopping{
         margin-right: .25em;
         padding-right: .5em ;
     } 
+    .item-flex h1{
+            padding: .25em;    
+    }
     .fa-computer{
-            padding: 10px 16px;
-        }
+        padding: 1em .25em;  
+            color: #65ea33;
+    }
+    .item-flex span > span {
+        display: inline-block;
+    } 
 }
 
 
@@ -221,9 +227,9 @@ header div a {
         align-content: center;
         justify-content:center;}
 
-    .item-flex span > span {
+     .item-flex span > span {
         display: inline-block;
-    }
+    } 
     .jumbotron{
         height: auto;
     }
@@ -252,7 +258,7 @@ header div a {
         padding: 14px 16px;
     }
     
-}
+} 
 
  /*ESTILOS PARA EL MAIN*/
 
