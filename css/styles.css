@@ -355,6 +355,10 @@ header div a:hover {
 /* CSS DEL FORMULARIO
 Hay cosas que estan comentadas por si después queremos agregarlas sino despues las borramos y si ven algo mal o que quieran cambiar no hay problema  */
 
+ 
+/* CSS DEL FORMULARIO
+Hay cosas que estan comentadas por si después queremos agregarlas sino despues las borramos y si ven algo mal o que quieran cambiar no hay problema  */
+
 form {
     box-sizing: border-box;
     width: 100%;
@@ -405,24 +409,54 @@ form h4 {
     background-color: #64ea33;
 }    
 
-.box-choose {
-   border-bottom: 1px solid black;
-}
+ /* Datos personales */
+ .box-data>div {
+    position: relative;
+ }
 
-.box-data input {
+ .box-data>div>input{
     width: 95%;
-    padding: .5em;
-    margin-top: .5em;
+    padding: 1em;
+    margin-top: .5em 0;
     border-style: none;
     border-bottom: 1px solid black;
 }
+.box-data>div>input:focus {
+    outline: none;
+
+}
 .box-data label {
     padding: 1em 0;
+    font-weight: bold;
+}
+  /* Error en datos personales */
+  .input-form-error {
+    font-size: 1em;
+    margin-bottom: 0px;
+    display: none;
+}
+
+.input-form-error-active {
+    display: block;
+}
+
+.form-valid-state {
+    position: absolute;
+    right: 40px;
+    top: 15px;
+    z-index: 100;
+    font-size: 1em;
+    opacity: 0;
+}
+
+ /*Info que pedimos */
+ .box-choose {
+    border-bottom: 1px solid black;
 }
 
 .box-choose input,
 label {
-    padding: .25em;
+    padding: .5em;
     margin-top: 1em ;
     margin-bottom: .5em;
 }
@@ -440,11 +474,23 @@ label {
     padding: 2rem 0;
 }
 
+.place-text label {
+    padding: 0;
+    margin: 0;
+}
+
 form input{
     accent-color: #65ea33 ;
 }
+ /* Estilo del boton */
+ .box-boton {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1em;
+    align-items: center;
+}
 .box-boton input{
-        margin: rem 0px;
+        margin: 0px;
         width: 100%;
         border: none;
         padding: 1rem 20px;
@@ -452,16 +498,17 @@ form input{
         background-color:  #64ea33ab;
         font-size: 1rem;
         font-weight: bold;
-    }
+}
+
 .box-boton input:hover{
     background-color:  hsl(103, 100%, 52%);
 }
-   
+    /* Cortes de pantalla */
 @media all and (min-width:900px){
 
 .container-in-form {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr ;
 }
 .box-tittle {
     grid-column: 1/2 ;
@@ -474,19 +521,18 @@ form input{
     grid-row:10/11 ;
     margin-bottom: 0;
 }
-/* .nov-boton{
-    grid-column: 2/4 ;
-    grid-row:9/10 ;
-} */
 .place-text{
     grid-column: 2/4 ;
     grid-row:5/9 ;
 }
-/* .place-asunto{
-    grid-column: 2/4 ;
-    grid-row:4/5 ;
-    padding-left: 10vw;
-} */
+.form-valid-state {
+    position: absolute;
+    right: 25px;
+    top: 15px;
+    z-index: 100;
+    font-size: 1em;
+    opacity: 0;
+}
 
 .box-choose-1{
     grid-column: 2/4 ;
@@ -503,19 +549,60 @@ form input{
     grid-row:4/5 ;
 }
 }
+ /* Validacion del formulario */
+ #error {
+    padding-left: 1rem;
+    margin-left: 1rem;
 
-/* @media all and (min-width:600px){
-    .container-in-form {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-.box-tittle {
-    grid-column: 1/2 ;
-    grid-row:1/11 ;
-    padding-top: 40vh;
 }
 
-} */
+.form-warning {
+    display: none;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 0px;
+    background-color: #f66060a8;
+    border-radius: 5px;
+}
+
+.form-warning-active {
+    display: block;
+}
+
+.form-warning p {
+    margin: 0px;
+}
+
+.form-exito-envio {
+    font-size: 14px;
+    font-weight: bold;
+    color: #119200;
+    display: none;
+}
+
+.form-exito-envio-active {
+    display: block;
+}
+
+
+.box-correct .form-valid-state {
+    color: #1ed12d;
+    opacity: 1;
+}
+
+.box-incorrect>label {
+    color: #ff1313;
+}
+
+.box-incorrect .form-valid-state {
+    color: #ff1313;
+    opacity: 1;
+}
+
+.box-incorrect div input {
+    border: 2px solid #ff1313;
+}
 
 
 /* Pagina sobre nosotros CSS */
@@ -554,10 +641,7 @@ form input{
     border-bottom: 1px solid black;
 }
 
-/* .item-about-us :first-child{
-    border: none;
 
-} */
 .item-opiniones {
     border: 1px solid black;
     margin: 1em;
