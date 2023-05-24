@@ -87,7 +87,7 @@
     /* height: 5vh; */
     /* cambio para ver si no se desborda el logo */
     height: 10vh;
-
+    font-size: .9em;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -182,15 +182,22 @@ header div a {
         /*font-size: 1.2vh; */
         font-size: .8em;
     }
-   
     .header-logo{
         justify-content: center;
         align-items: center;
+        font-size: 1em;
     }
     .input-search{
-        width:12vh;
+        width:15vh;
     }
     .banner img{src: local(img/razer-bannerpng);}
+    .fa-user, .fa-cart-shopping{
+        margin-right: .25em;
+        padding-right: .5em ;
+    } 
+    .fa-computer{
+            padding: 10px 16px;
+        }
 }
 
 
@@ -240,6 +247,9 @@ header div a {
     .fa-user, .fa-cart-shopping{
     margin-bottom: 0px;
     padding-bottom: .5em;
+    }
+    .fa-computer{
+        padding: 14px 16px;
     }
     
 }
