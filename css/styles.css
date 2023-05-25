@@ -474,13 +474,14 @@ form h4 {
 
 /* item del contenedor */
 .form-item {
-    padding: 1rem;
-    margin: 1rem;
+    width: auto;
+    padding: .5rem;
+    margin: 0rem;
 }
 
 .box-tittle {
     margin: 0px;
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-align: center;
     padding: 1em 2em;
     margin: 0;
@@ -714,9 +715,9 @@ form input {
 }
 
 .contendor-about-us h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     text-align: center;
-    padding: 1em 2em;
+    padding: 1em 2.2em;
     margin: 0;
 
     background-color: #64ea33;
@@ -805,7 +806,7 @@ form input {
     font-size: 2.5rem;
     text-align: center;
     background-color: #64ea33;
-    padding: 1em 2em;
+    padding: 1em 2.2em;
     margin: 0;
     border-top: 1px solid black;
 }
@@ -993,6 +994,7 @@ form input {
     }
     .contenedor-footer{
         width: auto;
+    
     }
     .footer{
         width: auto;
