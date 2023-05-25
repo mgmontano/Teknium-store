@@ -22,8 +22,7 @@
 			<div class="header-logo">
 				<div class="item-flex">
 					<span>
-						<div><i class="fa-solid fa-computer"></i>
-						</div>
+						<div><i class="fa-solid fa-computer"></i></div>
 						<div>
 							<h1>Teknium Store Hardware</h1>
 						</div>
@@ -32,26 +31,31 @@
 				<div class="item-flex">
 					<span>
 						<div><input type="search" class="input-search" placeholder="  Buscar...">
-							</div>
-							<div>
-							<button class="button-search"><i class="fa-solid fa-magnifying-glass"></i></button>
+						</div>
+						<div><button class="button-search"><i class="fa-solid fa-magnifying-glass"></i></button>
 						</div>
 					</span>
 				</div>
 				<div class="item-flex">
 					<span>
-						<!-- <span> -->
-						<div class="item-flex"><i class="fa-solid fa-user"></i>
-							<a href="index.html">Ususario</a>
-						</div>
-						<!-- </span> -->
-						<!-- <span> -->
-						<div class="item-flex"><i class="fa-solid fa-cart-shopping"></i>
-							<a href="index.html">Carrito</a>
-						</div>
-						<!-- </span> -->
+						<span>
+							<div class="item-flex ">
+								<span>
+									<h4> Dolar Blue: $</h4><span id="dolarPrice"></span>
+								</span>
+							</div>
+						</span>
+						<span>
+							<div class="item-flex"><i class="fa-solid fa-user"></i>
+								<a href="index.html">Ususario</a>
+							</div>
+						</span>
+						<span>
+							<div class="item-flex"><i class="fa-solid fa-cart-shopping"></i>
+								<a href="index.html">Carrito</a>
+							</div>
+						</span>
 					</span>
-
 				</div>
 			</div>
 			<nav>
@@ -65,7 +69,7 @@
 		</header>
 		<!--SECCION MAIN-->
 		<main class="item jumbotron">
-			<!-- Full-width images with number and caption text -->
+
 			<div class="mySlides fade">
 				<img src="img/hot-sale-teknium.jpg">
 			</div>
@@ -77,22 +81,22 @@
 			<div class="mySlides fade">
 				<img src="img/asus_rog.jpg">
 			</div>
-			<!-- Next and previous buttons -->
+
 			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
 			<a class="next" onclick="plusSlides(1)">&#10095;</a>
 
-
-			<!-- The dots/circles -->
-			<div style="text-align:center">
+			<div class="dotDiv">
 				<span class="dot" onclick="currentSlide(1)"></span>
 				<span class="dot" onclick="currentSlide(2)"></span>
 				<span class="dot" onclick="currentSlide(3)"></span>
 			</div>
 		</main>
+
 		<!--SECCION BANNER-->
 		<section class="item banner">
 			<img src="img/banner_12.jpg">
 		</section>
+
 		<!--SECCION PRODUCTOS DESTACADOS-->
 		<section class="item fproducts">
 			<div>
@@ -167,29 +171,25 @@
 			</div>
 		</section>
 		<!--SECCION FOOTER-->
-		<section class="item footer">
-			<footer class="item footer">
-				<div class="contenedor-footer">
-					<div class="footer-link contactanos">
-						<ul>
-							<li>
-								<h4>Contactanos</h4>
-							</li>
-							<li><a href="https://goo.gl/maps/qDytuY4sUen7yscJ8" target="_blank">Remedios de Escalada de
-									San
-									Martin 3875, Floresta (CABA)</a> </li>
-							<li><a href="https://goo.gl/maps/bXH2Ps2wsheR5icn8" target="_blank">Florida 537 PB, Local
-									379,
-									Microcentro (CABA)</a></li>
-							<li><a href="https://api.whatsapp.com/send?phone=5491123575522">Whatsapp: +54 11
-									2357-5522</a>
-							</li>
-							<li><a href="mailto:empresas@maximus.com.ar">empresas@maximus.com.ar</a></li>
-						</ul>
-					</div>
+		<footer class="item footer">
+			<div class="contenedor-footer">
+				<div class="footer-link contactanos">
+					<ul>
+						<li>
+							<h4>Contactanos</h4>
+						</li>
+						<li><a href="https://goo.gl/maps/qDytuY4sUen7yscJ8" target="_blank">Remedios de Escalada de San
+								Martin 3875, Floresta (CABA)</a> </li>
+						<li><a href="https://goo.gl/maps/bXH2Ps2wsheR5icn8" target="_blank">Florida 537 PB, Local 379,
+								Microcentro (CABA)</a></li>
+						<li><a href="https://api.whatsapp.com/send?phone=5491123575522">Whatsapp: +54 11 2357-5522</a>
+						</li>
+						<li><a href="mailto:empresas@maximus.com.ar">empresas@maximus.com.ar</a></li>
+					</ul>
+				</div>
 
-					<!-- Comente esta parte porque se me ocurrio añadir a cada uno su enlace y no se podria con horarios igualmente lo podemos agregar -->
-					<!-- <div class="footer-link horarios">
+				<!-- Comente esta parte porque se me ocurrio añadir a cada uno su enlace y no se podria con horarios igualmente lo podemos agregar -->
+				<!-- <div class="footer-link horarios">
 
 					<ul>
 						<li>
@@ -206,58 +206,58 @@
 						<li>Sab 10:00 AM -14:30 PM</li>
 					</ul>
 				</div> -->
-					<div class="footer-link ayuda">
+				<div class="footer-link ayuda">
 
-						<ul>
-							<li>
-								<h4>Ayuda</h4>
-							</li>
+					<ul>
+						<li>
+							<h4>Ayuda</h4>
+						</li>
 
-							<li><a href="">Tramite de Garantia</a></li>
-							<li><a href="">Boton de arrepentimiento</a></li>
-							<li><a href="">FAQ</a></li>
-						</ul>
+						<li><a href="">Tramite de Garantia</a></li>
+						<li><a href="">Boton de arrepentimiento</a></li>
+						<li><a href="">FAQ</a></li>
+					</ul>
 
-
-					</div>
-					<div class="footer-link defconsumidor">
-
-						<ul>
-							<li>
-								<h4>Defensa al consumidor</h4>
-							</li>
-							<li><a href="">Ley de defensa del consumidor</a></li>
-							<li><a href="">Conoce tus derechos como consumidor</a></li>
-						</ul>
-
-
-					</div>
-					<div class="footer-link seguinos">
-
-						<div>
-							<ul>
-								<li>
-									<h4>Seguinos</h4>
-								</li>
-							</ul>
-						</div>
-						<div class="iconos-redes">
-							<span> <a href=""><i class="fa-brands fa-twitter"></i></a><a href=""><i
-										class="fa-brands fa-facebook"></i></a></span>
-							<span>
-								<a href=""><i class="fa-brands fa-tiktok"></i></a>
-
-								<a href=""><i class="fa-brands fa-instagram"></i></a>
-							</span>
-						</div>
-					</div>
 
 				</div>
-			</footer>
-		</section>
+				<div class="footer-link defconsumidor">
+
+					<ul>
+						<li>
+							<h4>Defensa al consumidor</h4>
+						</li>
+						<li><a href="">Ley de defensa del consumidor</a></li>
+						<li><a href="">Conoce tus derechos como consumidor</a></li>
+					</ul>
+
+
+				</div>
+				<div class="footer-link seguinos">
+
+					<div>
+						<ul>
+							<li>
+								<h4>Seguinos</h4>
+							</li>
+						</ul>
+					</div>
+					<div class="iconos-redes">
+						<span> <a href=""><i class="fa-brands fa-twitter"></i></a><a href=""><i
+									class="fa-brands fa-facebook"></i></a></span>
+						<span>
+							<a href=""><i class="fa-brands fa-tiktok"></i></a>
+
+							<a href=""><i class="fa-brands fa-instagram"></i></a>
+						</span>
+					</div>
+				</div>
+
+			</div>
+		</footer>
 	</section>
 
-	<script src="js/app.js"></script>
+	<script src="js/carrousel.js"></script>
+	<script src="js/apiCriptoYa.js"></script>
 </body>
 
 </html>
