@@ -252,6 +252,7 @@ header div a:hover {
 
     header li a {
         font-size: 1.1em ;
+        padding: 1px;
       }
 
       
@@ -395,6 +396,7 @@ header div a:hover {
     background-color: white !important;
     overflow: hidden;
     border-radius: 10px;
+    height: 15vh;
  
 }
 
@@ -785,7 +787,6 @@ form input {
     }
 
 }
-
 
 /* Aca termina CSS de sobre nosotros */
 
