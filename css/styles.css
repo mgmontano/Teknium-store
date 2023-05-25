@@ -1,4 +1,3 @@
-/* Agregue esto porque sino no se me centraba el texto del footer, si alguno sabe de otra forma, lo cambiamos. */
 * {
     font-family: 'Source Sans Pro', sans-serif;
     margin: 0;
@@ -52,7 +51,6 @@
         "fproducts  fproducts  fproducts  fproducts  fproducts  fproducts "
         "footer      footer    footer     footer    footer    footer";
 
-    /*gap: 5px;*/
 }
 
 /*ESTILOS PARA EL HEADER */
@@ -62,22 +60,24 @@ header ul {
     list-style-type: none;
     background-color: #65ea33;
     height: 6vh;
-    /* lo que agregue */
-    column-gap: 1em;
+    column-gap: 2vh;
 }
 
 header li {
     align-self: center;
 }
-
+#dolarPrice {
+    color: #64ea33;
+    font-size: 1.5vh;
+    margin: 0.2vh;
+}
 header li a {
     color: white;
     text-align: center;
     text-decoration: none;
-    /*Lo agregue */
-    font-size: 1.1em;
-    /* asi o lo podemos hacer en px */
+    font-size: 1.5vh;
     padding: .25em 1em;
+    margin: 0.5vh;
 }
 
 header li a:hover {
@@ -86,8 +86,6 @@ header li a:hover {
 }
 
 .header-logo {
-    /* height: 5vh; */
-    /* cambio para ver si no se desborda el logo */
     height: 10vh;
     font-size: .9em;
     display: flex;
@@ -100,17 +98,16 @@ header li a:hover {
 .item-flex {
     display: flex;
     flex-direction: row;
-    /* padding: 10px 5px; */
-    /* le agregue un margin */
     padding: .5em .25em;
     margin: 0 .25em;
     text-align: center;
     align-items: center;
 }
 
-/* agregue esto */
 .item-flex span {
     display: flex;
+    text-align: center;
+    align-items: center;
 }
 
 .item-flex h1 {
@@ -124,8 +121,6 @@ header li a:hover {
 }
 
 .fa-magnifying-glass {
-    /* padding: 14px 16px; */
-    /* le cambie el padding al boton para que no sea tan grande */
     padding: 5px;
     color: #65ea33;
 }
@@ -154,9 +149,7 @@ header div a:hover {
 
 .button-search {
     border: none;
-    /* border-radius: 10px;*/
     margin: 0.5vh;
-    /* lo cambie para que el boton no crezca tanto */
     border-radius: 5px;
     padding: 2px;
 }
@@ -171,21 +164,19 @@ header div a:hover {
     height: 5vh;
     width: 30vh;
     padding: 5px;
-    /* le agregue el mismo margin que el boton que esta al lado */
     margin: 0.5vh;
 }
 
 @media screen and (max-width: 900px) {
     .header {
         width: auto;
-        /*font-size: 1.2vh; */
-        font-size: .8em;
+        font-size: 1.2vh; 
     }
 
     .header-logo {
         justify-content: center;
         align-items: center;
-        font-size: 1em;
+        font-size: 1.3vh;
     }
 
     .input-search {
@@ -217,8 +208,6 @@ header div a:hover {
     }
 }
 
-
-
 @media screen and (max-width: 600px) {
     .header {
         display: grid;
@@ -231,12 +220,10 @@ header div a:hover {
         align-content: center;
         justify-content: center;
         height: auto;
-        /* agregue */
         font-size: 2em;
     }
 
     .header-logo .item-flex {
-        /* cambie display grid por el inline-block */
         display: grid;
         align-content: center;
         justify-content: center;
@@ -263,7 +250,6 @@ header div a:hover {
         padding: 0 1em;
     }
 
-    /* lo agregue */
     header li a {
         font-size: 1.1em ;
       }
@@ -343,7 +329,6 @@ header div a:hover {
     background-color: #717171;
 }
 
-/* Fading animation */
 .fade {
     animation-name: fade;
     animation-duration: 1.5s;
@@ -410,6 +395,7 @@ header div a:hover {
     background-color: white !important;
     overflow: hidden;
     border-radius: 10px;
+ 
 }
 
 .card-texto {
@@ -451,17 +437,12 @@ header div a:hover {
 }
 
 
-/* CSS DEL FORMULARIO
-Hay cosas que estan comentadas por si después queremos agregarlas sino despues las borramos y si ven algo mal o que quieran cambiar no hay problema  */
-
-
-/* CSS DEL FORMULARIO
-Hay cosas que estan comentadas por si después queremos agregarlas sino despues las borramos y si ven algo mal o que quieran cambiar no hay problema  */
+/* CSS DEL FORMULARIO*/
 
 form {
     box-sizing: border-box;
     width: 100vw;
-    /* min-width: 400px; */
+ 
     max-width: 95vw;
     margin: 1vw;
 }
@@ -486,18 +467,13 @@ form h4 {
 
 /* Contenedor del formulario */
 .container-in-form {
-    /* border: 1px solid black; */
     display: grid;
-    /* row-gap: 1rem; */
-    /* margin: 1rem; */
-    /* padding: 1rem; */
     grid-template-columns: auto;
 
 }
 
 /* item del contenedor */
 .form-item {
-    /* border: 1px solid rgb(0, 0, 0); */
     padding: 1rem;
     margin: 1rem;
 }
@@ -506,8 +482,6 @@ form h4 {
     margin: 0px;
     font-size: 2rem;
     text-align: center;
-    /* background: linear-gradient(#65ea33, 90%, rgb(0, 46, 0));; */
-    /* background: linear-gradient(black, 50%, #65ea33); */
     padding: 1em 2em;
     margin: 0;
     border: 1px solid black;
@@ -742,8 +716,6 @@ form input {
 .contendor-about-us h1 {
     font-size: 2.5rem;
     text-align: center;
-    /* background: linear-gradient(#65ea33, 90%, rgb(0, 46, 0));; */
-    /* background: linear-gradient(black, 50%, #65ea33); */
     padding: 1em 2em;
     margin: 0;
 
@@ -754,14 +726,11 @@ form input {
 
 .item-info-about-us h3 {
     margin: 1em;
-    /* padding: .5em; */
 }
 
-/*  */
 .item-about-us {
     padding: 1em;
     margin: 0px 5vw 2em;
-    /* border-top: 1px solid black; */
     border-bottom: 1px solid black;
 }
 
@@ -913,7 +882,6 @@ form input {
 }
 
 /* CSS DE LA PARTE DEL FOOTER */
-/* Lo voy a dejar comentado por ahora, tenemos que ver que no se superponga con los demas estilos */
 
 .contenedor-footer {
     background-color: #1c1f1b;
@@ -921,7 +889,6 @@ form input {
     flex-wrap: nowrap;
     flex-direction: row;
     padding: 0;
-    /* padding-left: 1%; */
     margin: 0;
     justify-content: center;
     align-content: space-around;
