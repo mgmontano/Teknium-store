@@ -245,11 +245,14 @@ header div a {
     }
     /* lo agregue */
     header li a {
-        font-size: 1.6em ;
+        font-size: 1.1em ;
       }
+
+      
       header ul {
         height: 7vh;
     }
+
     .fa-user, .fa-cart-shopping{
     margin-bottom: 0px;
     padding-bottom: .5em;
