@@ -917,6 +917,7 @@ form input {
 
 .footer-link ul li {
     margin-bottom: .5rem;
+    padding-left: 1em ;
 }
 
 .footer-link>ul li a {
